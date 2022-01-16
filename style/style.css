@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,500;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary: #ef233c;
+}
+html{
+    font-size: 18px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.container_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+}
+.container_logo_page{
+    width: 60px;
+}
+.container_logo_page img{
+    width: 100%;
+}
+/* css de la navegación de la página */
+.navegation_header{
+    display: flex;
+    align-items: center;
+}
+.navegation_header ol{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.navegation_header ol li{
+    margin: 0 10px;
+    counter-increment: item 1;
+}
+.navegation_header ol li a{
+    transition: 0.2s ease;
+    color: black;
+    text-decoration: none;
+}
+.navegation_header ol li a::before{
+    content: "0" counter(item) ".";
+    color: var(--color-primary);
+}
+.navegation_header ol li:hover a{
+    color: var(--color-primary);
+}
+.button_view_cv_information{
+    padding: 10px;
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+.button_view_cv_information:hover{
+    background: #ef233b28;
+}
+/* css de las partes laterales */
+.container_sides_info{
+    position: fixed;
+    bottom: 0;
+    padding: 0 20px;
+}
+.side_der{
+    right: 0;
+}
+.side_der a{
+    writing-mode: vertical-rl;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.1em;  
+    transition: .3s ease;
+    line-height: 18px;
+}
+.sides_info_email{
+    transition: .3s ease;
+}
+.sides_info_email:hover a{
+    color: var(--color-primary);
+}
+.sides_info_email:hover{
+    transform: translateY(-5px);
+}
+.sides_info_email::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--color-primary);
+}
+/* izquierda */
+.side_izq{
+    left: 0;
+}
+.container_sides_info ul{
+    list-style: none;
+}
+.container_sides_info ul::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100px;
+    margin: 0px auto;
+    background-color: var(--color-primary);
+}
+.container_sides_info ul li{
+    margin: 10px 0;
+    transition: .3s ease;
+}
+.container_sides_info ul li a{
+    color: black;
+    transition: .3s ease;
+}
+.container_sides_info ul li:hover a{
+    color: var(--color-primary);
+}
+.container_sides_info ul li:hover{
+    transform: translateY(-5px);
+}
+/* css del main de la página */
+.container_main{
+    padding: 0 100px;
+}
+/* css de la parte de presentación */
+.container_information_presentation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.text_presentation{
+    color: var(--color-primary);
+    padding-bottom: 10px;
+}
+.text_name_presentation{
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+.text_description_presentation{
+    max-width: 60%;
+    padding: 10px 0;
+}
+
+
+
+/* css de las secciones */
+.title_information_presentation{
+    padding: 10px 0;
+}
+.title_information_presentation::before {
+    font-size: 1.2rem;
+    counter-increment: section 1;
+    content: "0" counter(section) ". ";
+    color: var(--color-primary);
+}
+.title_information_presentation::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: var(--color-primary);
+}
+.information_section{
+    display: flex;
+}
+.text_information_section{
+}
+.image_information_section{
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    position: relative;
+}
+.image_information_section img{
+    width: 100%;
+    border-radius: 5px;
+    background: red;
+}
+.image_information_section::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 2px solid var(--color-primary);
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+}
