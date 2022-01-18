@@ -52,7 +52,7 @@ body{
     counter-increment: item 1;
 }
 .navegation_header ol li a{
-    transition: 0.2s ease;
+    transition: 0.3s ease;
     color: black;
     text-decoration: none;
 }
@@ -83,7 +83,7 @@ body{
 .container_sides_info{
     position: fixed;
     bottom: 0;
-    padding: 0 35px;
+    padding: 0 50px;
 }
 .side_der{
     right: 0;
@@ -144,9 +144,9 @@ body{
 }
 /* css del main de la página */
 .container_main{
-    padding: 0 20%;
+    padding: 0 15%;
 }
-/* css de la parte de presentación */
+/* css de la parte de PRESENTACIÓN */
 .container_information_presentation{
     display: flex;
     justify-content: center;
@@ -240,16 +240,18 @@ body{
     background-color: transparent;
 }
 /* css del de los proyectos personales */
+#trabajos .title_information_presentation{
+    padding-top: 50px;
+}
 .proyects_information{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .container_proyect_info{
     display: flex;
-    width: 90%;
-    margin-top: 100px;
+    width: 100%;
+    margin: 50px 0;
 }
 .proyect_image{
     width: 400px;
