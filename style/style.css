@@ -166,9 +166,11 @@ body{
     max-width: 60%;
     padding: 10px 0;
 }
-
-
-
+.text_description_presentation a{
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 700;
+}
 /* css de las secciones */
 .title_information_presentation{
     padding: 10px 0;
@@ -195,8 +197,30 @@ body{
     justify-content: center;
     align-items: center;
 }
+#acercaDe .information_section{
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    text-align: left;
+}
 .text_information_section{
     padding: 10px;
+}
+.text_information_section p{
+    margin-bottom: 10px;
+}
+.text_information_section ul{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+}
+.text_information_section ul li::before{
+    content: "▹";
+    color: var(--color-primary);
+    font-size: 20px;
 }
 .image_information_section{
     width: 220px;
@@ -260,6 +284,7 @@ body{
 .proyect_image{
     min-width: 60%;
     max-width: 630px;
+    max-height: 310px;
     height: max-content;
     position: relative;
     z-index: -1;
@@ -314,7 +339,6 @@ body{
 }
 .list_tecnology_uset li{
     padding: 0 0 10px 10px;
-    font-size: 0.9rem;
     letter-spacing: 0.1em;
 }
 .container_proyect_links a{
@@ -368,12 +392,14 @@ body{
     align-items: center;
 }
 .container_card_add_proyect{
-    width: 350px;
+    max-width: 300px;
+    height: 310px;
     padding: 20px;
     border-radius: 5px;
     transition: .3s ease;
     border: 1px solid var(--color-primary);
     margin: 5px;
+    position: relative;
 }
 .add_proyect_top{
     display: flex;
@@ -392,6 +418,7 @@ body{
     text-decoration: none;
     color: black;
     transition: .3s ease;
+    text-transform: capitalize;
 }
 .container_card_add_proyect:hover > .add_proyect_title > a{
     color: var(--color-primary);
@@ -401,9 +428,20 @@ body{
     background-color: var(--background-blur_secundary);
 }
 .container_card_add_proyect .list_tecnology_uset{
+    text-transform: uppercase;
     justify-content: left;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
 }
 .container_card_add_proyect .list_tecnology_uset li{
-    font-size: .8rem;
+    font-size: .7rem;
     padding: 10px 10px 0 0 ;
+}
+#contactos .text_information_section{
+    text-align: center;
+}
+.gif_animado_contactos{
+    width: 70%;
+    max-width: 300px;
 }

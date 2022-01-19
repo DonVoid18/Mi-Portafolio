@@ -82,7 +82,13 @@
         text-align: center;
         align-items: center;
     }
+    .add_container_proyects{
+        text-align: left;
+    }
     .container_sides_info{
         display: none;
+    }
+    #acercaDe .information_section{
+        flex-wrap: wrap;
     }
 }
