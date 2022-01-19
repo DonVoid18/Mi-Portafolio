@@ -7,7 +7,7 @@
     <title>Angelo Patrick</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/style_loader_icon.css">
-    <link rel="stylesheet" href="style/media_querys.css">
+    <link rel="stylesheet" href="style/menu_responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
@@ -20,10 +20,12 @@
         <header class="container_header">
             <section class="container_logo_page">
                 <img src="images/new logo 5-modified.png" alt="Logo de la página" title="Logo">
-                
             </section>
+            <button class="button_menu_responsive">
+                <i class="fas fa-bars"></i>
+            </button>
             <section class="navegation_header">
-                <ol>
+                <ol class="menu_web">
                     <li>
                         <a href="#acercaDe">
                             Acerca De
@@ -44,10 +46,12 @@
                             Contactos
                         </a>
                     </li>
+                    <li>
+                        <button class="button_view_cv_information">
+                            Resumen
+                        </button>
+                    </li>
                 </ol>
-                <button class="button_view_cv_information">
-                    Resumen
-                </button>
             </section>
         </header>
         <div class="container_main">
@@ -241,7 +245,8 @@
             </section>
         </div>
     </div>
-    <script src="scripts/header_moved.js"></script>
     <script src="scripts/web_loaded.js"></script>
+    <script src="scripts/menu_responsive.js"></script>
+    <script src="https://kit.fontawesome.com/71a4b48035.js" crossorigin="anonymous"></script>
 </body>
 </html>
