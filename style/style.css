@@ -8,9 +8,10 @@
     --color-primary: #ef233c;
     --background-blur-primary: #ef233b67;
     --background-blur_secundary: #ef233b18;
+    --border-radius: 5px;
 }
 html{
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Chakra Petch', sans-serif;
     scroll-behavior: smooth;
 }
@@ -22,7 +23,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 0.9375rem 1.875rem;
     position: fixed;
     transition: .3s ease;
     z-index: 1000;
@@ -32,7 +33,7 @@ body{
     transform: translateY(-100%);
 }
 .container_logo_page{
-    width: 50px;
+    width: 3.125rem;
 }
 .container_logo_page img{
     width: 100%;
@@ -49,7 +50,7 @@ body{
     list-style: none;
 }
 .navegation_header ol li{
-    margin: 0 10px;
+    margin: 0 0.625rem;
     counter-increment: item 1;
 }
 .navegation_header ol li a{
@@ -65,17 +66,17 @@ body{
     color: var(--color-primary);
 }
 .button_view_cv_information{
-    padding: 10px;
+    padding: 0.625rem;
     background: transparent;
-    border: 2px solid var(--color-primary);
+    border: 0.125rem solid var(--color-primary);
     color: var(--color-primary);
     font-weight: 700;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     cursor: pointer;
     transition: 0.3s ease;
     font-family: 'Chakra Petch', sans-serif;
     font-size: 1rem;
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 .button_view_cv_information:hover{
     background: #ef233b28;
@@ -84,7 +85,7 @@ body{
 .container_sides_info{
     position: fixed;
     bottom: 0;
-    padding: 0 50px;
+    padding: 0 3.125rem;
 }
 .side_der{
     right: 0;
@@ -95,7 +96,7 @@ body{
     text-decoration: none;
     letter-spacing: 0.1em;  
     transition: .3s ease;
-    line-height: 18px;
+    line-height: 1.125rem;
 }
 .sides_info_email{
     transition: .3s ease;
@@ -104,13 +105,13 @@ body{
     color: var(--color-primary);
 }
 .sides_info_email:hover{
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
 }
 .sides_info_email::after{
     content: "";
     display: block;
-    width: 2px;
-    height: 100px;
+    width: 0.125rem;
+    height: 6.25rem;
     margin: 0px auto;
     background-color: var(--color-primary);
 }
@@ -124,13 +125,13 @@ body{
 .container_sides_info ul::after{
     content: "";
     display: block;
-    width: 2px;
-    height: 100px;
+    width: 0.125rem;
+    height: 6.25rem;
     margin: 0px auto;
     background-color: var(--color-primary);
 }
 .container_sides_info ul li{
-    margin: 10px 0;
+    margin: 0.625rem 0;
     transition: .3s ease;
 }
 .container_sides_info ul li a{
@@ -141,7 +142,7 @@ body{
     color: var(--color-primary);
 }
 .container_sides_info ul li:hover{
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
 }
 /* css del main de la página */
 .container_main{
@@ -156,7 +157,7 @@ body{
 }
 .text_presentation{
     color: var(--color-primary);
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 }
 .text_name_presentation{
     font-size: 4.5rem;
@@ -164,7 +165,7 @@ body{
 }
 .text_description_presentation{
     max-width: 60%;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 .text_description_presentation a{
     color: var(--color-primary);
@@ -185,10 +186,10 @@ body{
     content: "";
     display: inline-block;
     position: relative;
-    bottom: 7px;
-    left: 20px;
-    width: 300px;
-    height: 1px;
+    bottom: 0.4375rem;
+    left: 1.25rem;
+    width: 18.75rem;
+    height: 0.0625rem;
     background-color: var(--color-primary);
 }
 .information_section{
@@ -203,35 +204,35 @@ body{
     text-align: left;
 }
 .text_information_section{
-    padding: 10px;
+    padding: 0.625rem;
 }
 .text_information_section p{
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .text_information_section ul{
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    gap: 0px 10px;
-    padding: 0px;
-    margin: 20px 0px 0px;
+    grid-template-columns: repeat(2, minmax(8.75rem, 12.5rem));
+    gap: 0rem 0.625rem;
+    padding: 0rem;
+    margin: 1.25rem 0rem 0rem;
     overflow: hidden;
     list-style: none;
 }
 .text_information_section ul li::before{
     content: "▹";
     color: var(--color-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .image_information_section{
-    width: 220px;
-    min-width: 220px;
-    height: 220px;
+    width: 13.75rem;
+    min-width: 13.75rem;
+    height: 13.75rem;
     position: relative;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .image_information_section img{
     width: 100%;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 .image_information_section::before{
     content: "";
@@ -239,7 +240,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     top: 0;
     left: 0;
     background-color: var(--background-blur-primary); 
@@ -252,7 +253,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     border: 2px solid var(--color-primary);
     top: 10px;
     left: 10px;
@@ -269,7 +270,7 @@ body{
 }
 /* css del de los proyectos personales */
 #trabajos .title_information_presentation{
-    padding-top: 50px;
+    padding-top: 3.125rem;
 }
 .proyects_information{
     display: flex;
@@ -279,17 +280,17 @@ body{
 .container_proyect_info{
     display: flex;
     width: 100%;
-    margin: 50px 0;
+    margin: 3.125rem 0;
 }
 .proyect_image{
     min-width: 60%;
-    max-width: 630px;
-    max-height: 310px;
+    max-width: 39.375rem;
+    max-height: 19.375rem;
     height: max-content;
     position: relative;
     z-index: -1;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 .proyect_image img{
     width: 100%;
@@ -300,7 +301,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     top: 0;
     left: 0;
     background-color: var(--background-blur-primary); 
@@ -310,7 +311,7 @@ body{
     background-color: transparent;
 }
 .text_proyect_information{
-    padding-top: 10px;
+    padding-top: 0.625rem;
     text-align: right;
     position: relative;
 }
@@ -320,11 +321,11 @@ body{
 }
 .title_proyect_info{
     font-size: 1.5rem;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 }
 .container-description_proyect_text{
-    padding: 20px;
-    border-radius: 5px;
+    padding: 1.25rem;
+    border-radius: var(--border-radius);
     background-color: var(--color-primary);
     transition: .3s ease;
 }
@@ -335,20 +336,20 @@ body{
     list-style: none;
     display: flex;
     justify-content: right;
-    padding-top: 10px;
+    padding-top: 0.625rem;
 }
 .list_tecnology_uset li{
-    padding: 0 0 10px 10px;
+    padding: 0 0 0.625rem 0.625rem;
     letter-spacing: 0.1em;
 }
 .container_proyect_links a{
     text-decoration: none;
     color: black;
-    margin-left: 5px;
+    margin-left: 0.3125rem;
 }
 .container_proyect_links a svg{
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     transition: .3s ease-in-out;
 }
 .container_proyect_links a:hover svg{
@@ -372,11 +373,11 @@ body{
 /* css de las cards container */
 .container_add_proyects_information{
     width: 100%;
-    padding-top: 50px;
+    padding-top: 3.125rem;
 }
 .add_title_proyects{
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
 }
 .add_title_proyects a{
     text-decoration: none;
@@ -392,14 +393,14 @@ body{
     align-items: center;
 }
 .container_card_add_proyect{
-    width: 300px;
-    max-width: 300px;
-    height: 310px;
-    padding: 20px;
-    border-radius: 5px;
+    width: 18.75rem;
+    max-width: 18.75rem;
+    height: 19.375rem;
+    padding: 1.25rem;
+    border-radius: var(--border-radius);
     transition: .3s ease;
     border: 1px solid var(--color-primary);
-    margin: 5px;
+    margin: 0.3125rem;
     position: relative;
 }
 .add_proyect_top{
@@ -408,12 +409,12 @@ body{
     align-items: center;
 }
 .folder svg{
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     color: var(--color-primary);
 }
 .add_proyect_title{
-    padding: 15px 0 20px 0;
+    padding: 0.9375rem 0 1.25rem 0;
 }
 .add_proyect_title > a{
     text-decoration: none;
@@ -437,7 +438,7 @@ body{
 }
 .container_card_add_proyect .list_tecnology_uset li{
     font-size: .7rem;
-    padding: 10px 10px 0 0 ;
+    padding: 0.625rem 0.625rem 0 0 ;
 }
 #contactos .text_information_section{
     text-align: center;
